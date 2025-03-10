@@ -1,0 +1,26 @@
+/* Example: Adjusting the headings and spacing */
+h2, h4, h6 {
+    font-family: 'Inter', sans-serif; /* or any font you prefer */
+  }
+  
+  .container {
+    max-width: 1200px; /* Make the container a bit wider if desired */
+  }
+  
+  .card-title {
+    font-weight: 600;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Example: Adjusting badge colors if you prefer a lighter tone */
+  .badge.bg-primary {
+    background-color: #005eff;
+  }
+  .badge.bg-secondary {
+    background-color: #777;
+  }
+  
