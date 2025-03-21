@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio website! This site showcases my projects, skills, and experiences in the field of Data Science and Machine Learning.
 
+https://sarveshkharche.github.io/portfolio/
+
 ## About Me
 
 I'm Sarvesh Kharche, an MS in Data Science candidate at Rutgers University (May 2025) with experience as a TCS Analyst. I specialize in machine learning, NLP, and data analytics, with projects including LoRA-enhanced transformers and financial sentiment analysis. Proficient in Python, PyTorch, TensorFlow, and Hugging Face Transformers, I develop solutions that extract actionable insights from complex data. I'm seeking full-time roles in Data Science, Data Analytics, Machine Learning, or AI Engineering.
