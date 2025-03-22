@@ -4,220 +4,350 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sarvesh Kharche - Portfolio</title>
-  <!-- Bootstrap CSS (CDN) -->
+  <!-- Materialize CSS (CDN) -->
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
   />
-  <!-- Your Custom CSS (Optional) -->
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Your Custom CSS -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+
+  <!-- Navigation Bar (NEW) -->
+  <!-- <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <div class="container">
+        <a href="#" class="brand-logo">SK</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+  <!-- Mobile Sidenav -->
+  <!-- <ul class="sidenav" id="mobile-demo">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>  -->
 
   <!-- Main Container -->
   <div class="container my-5">
     <div class="row">
       <!-- LEFT COLUMN (Profile & Skills) -->
-      <div class="col-md-3 mb-4">
+      <div class="col s12 m4">
         <!-- Profile Section -->
-        <div class="text-center">
-          <!-- Profile Photo -->
-          <img
-            src="images/headshot.jpg"
-            class="rounded-circle mb-3"
-            alt="Profile Photo"
-            width="120"
-            height="120"
-          />
-          <!-- Name and Title -->
-          <h2 class="h5">Sarvesh Kharche</h2>
-          <p class="text-muted mb-1">MS in Data Science</p>
-          <p class="text-muted mb-1">Rutgers University</p>
-          <p class="text-muted">Based in New Brunswick, NJ</p>
+        <div class="card">
+          <div class="card-content profile-header">
+            <img src="images/headshot.jpg" alt="Profile Photo" class="circle responsive-img profile-img" width="150" height="150">
+            <h5>Sarvesh Kharche</h5>
+            <p class="grey-text">MS in Data Science</p>
+            <p class="grey-text">Rutgers University</p>
+            <div class="location-badge">
+              <i class="material-icons tiny">location_on</i>
+              <span>New Brunswick, NJ</span>
+            </div>
+            
+            <!-- Social Media Links (NEW) -->
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/sarvesh-kharche/" class="btn-floating btn-small waves-effect waves-light">
+                  <i style="background-color: black;" class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/sarveshKharche" class="btn-floating btn-small waves-effect waves-light">
+                  <i style="background-color: black;" class="fab fa-github"></i>
+                </a>
+                <a href="mailto:sarvesh.kharche@rutgers.edu" class="btn-floating btn-small waves-effect waves-light">
+                  <i style="background-color: black;" class="fas fa-envelope"></i>
+                </a>
+              </div>
+            
+          </div>
         </div>
 
         <!-- About Section -->
-        <div class="mt-4">
-          <h6>About</h6>
-          <p class="small" style="text-align:justify;">
-            I'm Sarvesh Kharche, an MS in Data Science candidate at Rutgers University (May 2025) 
-            with experience as a TCS Analyst. I specialize in machine learning, NLP, and data analytics, 
-            with projects including LoRA-enhanced transformers and financial sentiment analysis. Proficient in 
-            Python, PyTorch, TensorFlow, and Hugging Face Transformers, I develop solutions that extract actionable 
-            insights from complex data. I'm seeking full-time roles in Data Science, Data Analytics, 
-            Machine Learning, or AI Engineering—let's connect if you need a professional who blends theory 
-            with practical expertise.
-          </p>
+        <div class="card" id="about">
+          <div class="card-content">
+            <span class="card-title">About</span>
+            <p style="text-align:justify;">
+              I'm Sarvesh Kharche, an MS in Data Science student at Rutgers University (May 2025) 
+              with experience as an Analyst. I specialize in machine learning, NLP, and data analytics, 
+              with projects including LoRA-enhanced transformers and financial sentiment analysis.
+            </p>
+            <p style="text-align:justify;">
+              Proficient in Python, PyTorch, TensorFlow, and Hugging Face Transformers, I develop solutions 
+              that extract actionable insights from complex data. I'm seeking full-time roles in Data Science, 
+              Data Analytics, Machine Learning, or AI Engineering—let's connect if you need a professional who 
+              blends theory with practical expertise.
+            </p>
+          </div>
         </div>
 
         <!-- Skills Section -->
-        <div class="mt-4">
-          <h6>Skills</h6>
-          <!-- Example skill badges -->
-          <span class="badge bg-primary me-1">Python</span>
-          <span class="badge bg-primary me-1">SQL</span>
-          <span class="badge bg-primary me-1">R</span>
-          <span class="badge bg-primary me-1">Tableau</span>
-          <span class="badge bg-primary me-1">Pandas</span>
-          <span class="badge bg-primary me-1">Numpy</span>
-          <span class="badge bg-primary me-1">Transformers</span>
-          <span class="badge bg-primary me-1">NLP</span>
-          <span class="badge bg-primary me-1">Git</span>
-          <!-- Add more as needed -->
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Skills</span>
+            <div class="skill-category">
+              <h6><i class="material-icons tiny">code</i> Programming</h6>
+              <div class="chips-container">
+                <div class="chip">Python</div>
+                <div class="chip">SQL</div>
+                <div class="chip">R</div>
+                <div class="chip">Git</div>
+              </div>
+            </div>
+            
+            <div class="skill-category">
+              <h6><i class="material-icons tiny">data_usage</i> Data Science</h6>
+              <div class="chips-container">
+                <div class="chip">Pandas</div>
+                <div class="chip">NumPy</div>
+                <div class="chip">Sklearn</div>
+                <div class="chip">Tableau</div>
+              </div>
+            </div>
+            
+            <div class="skill-category">
+              <h6><i class="material-icons tiny">psychology</i> AI / ML</h6>
+              <div class="chips-container">
+                <div class="chip">PyTorch</div>
+                <div class="chip">TensorFlow</div>
+                <div class="chip">Transformers</div>
+                <div class="chip">NLP</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- RIGHT COLUMN (Projects, Education, etc.) -->
-      <div class="col-md-9">
+      <div class="col s12 m8">
         <!-- Projects Section -->
-        <section class="mb-5">
-          <h4 class="mb-4">Projects</h4>
-
-          <!-- Example Project Card -->
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-3">
-                <img
-                  src="images/project1.jpeg"
-                  class="img-fluid rounded-start"
-                  alt="Project 1"
-                />
+        <div class="card" id="projects">
+          <div class="card-content">
+            <span class="card-title">Projects</span>
+            
+            <!-- Project 1 -->
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="images/project1.jpeg" alt="Flashcard Generation Project">
               </div>
-              <div class="col-md-9">
-                <div class="card-body">
-                  <h5 class="card-title">Automated Flashcard Generation Using LoRA-Enhanced Transformer Models</h5>
-                  <p class="card-text">
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5>Automated Flashcard Generation</h5>
+                  <div class="tech-tags">
+                    <span class="chip">NLP</span>
+                    <span class="chip">Transformers</span>
+                    <span class="chip">LoRA</span>
+                  </div>
+                  <p>
                     Developed an NLP-powered tool that automatically generates high-quality 
                     flashcards from academic notes using a fine-tuned T5 model with 
-                    Low-Rank Adaptation (LoRA), improving study efficiency through contextual 
-                    question-answer generation.
-                    <!-- Link to project or more details -->
-                    <a href="https://kharchesarvesh.medium.com/automating-flashcard-generation-with-lora-enhanced-transformers-a79854818190" class="card-link">Read more</a>
+                    Low-Rank Adaptation (LoRA).
                   </p>
-                  <!-- Skill badges or tags for the project -->
-                  <span class="badge bg-secondary me-1">Python</span>
-                  <span class="badge bg-secondary me-1">NLP</span>
-                  <span class="badge bg-secondary me-1">Model Fine-Tuning</span>
-                  <span class="badge bg-secondary me-1">Transformers</span>
+                  <a href="https://kharchesarvesh.medium.com/automating-flashcard-generation-with-lora-enhanced-transformers-a79854818190" class="card-link">Read more <i class="material-icons tiny">arrow_forward</i></a>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Repeat the card for more projects -->
-
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-3">
-                <img
-                  src="images/project2.jpeg"
-                  class="img-fluid rounded-start"
-                  alt="Project 1"
-                />
+            <!-- Project 1 -->
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="images/project4.jpeg" alt="Autonomous Research Assistant For Literature Review">
               </div>
-              <div class="col-md-9">
-                <div class="card-body">
-                  <h5 class="card-title">Twitter Data Based Search Application</h5>
-                  <p class="card-text">
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5>Autonomous Research Assistant For Literature Review</h5>
+                  <div class="tech-tags">
+                    <span class="chip">AI</span>
+                    <span class="chip">RAG</span>
+                    <span class="chip">Langchain</span>
+                  </div>
+                  <p>
+                    I developed an AI-powered research assistant that streamlines academic research by 
+                    automatically gathering, summarizing, and synthesizing literature from sources like 
+                    arXiv. This project leverages advanced techniques such as Retrieval Augmented Generation 
+                    and interactive dashboards to enhance research workflows.
+                  </p>
+                  <a href="https://kharchesarvesh.medium.com/building-an-ai-research-assistant-a-step-by-step-guide-63180c282f3b" class="card-link">Read more <i class="material-icons tiny">arrow_forward</i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="images/project2.jpeg" alt="Twitter Data Search App">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5>Twitter Data Search Application</h5>
+                  <div class="tech-tags">
+                    <span class="chip">Azure SQL</span>
+                    <span class="chip">MongoDB</span>
+                    <span class="chip">Databricks</span>
+                  </div>
+                  <p>
                     Designed an efficient system for collecting, storing, and retrieving 
-                    Twitter data using Azure SQL and MongoDB. Developed a Databricks-powered 
-                    search application with caching mechanisms to enhance query performance 
-                    and user experience.
-                    <!-- Link to project or more details -->
-                    <a href="https://kharchesarvesh.medium.com/optimizing-twitter-data-management-and-search-with-databricks-azure-sql-and-mongodb-b1bcd58ec13f" class="card-link">Read more</a>
+                    Twitter data using Azure SQL and MongoDB with caching mechanisms to enhance 
+                    query performance.
                   </p>
-                  <!-- Skill badges or tags for the project -->
-                  <span class="badge bg-secondary me-1">Python</span>
-                  <span class="badge bg-secondary me-1">SQL</span>
-                  <span class="badge bg-secondary me-1">Database Management</span>
-                  <span class="badge bg-secondary me-1">Data Processing</span>
+                  <a href="https://kharchesarvesh.medium.com/optimizing-twitter-data-management-and-search-with-databricks-azure-sql-and-mongodb-b1bcd58ec13f" class="card-link">Read more <i class="material-icons tiny">arrow_forward</i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="images/project3.jpeg" alt="Cricket Match Simulation">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5>Cricket Match Simulation</h5>
+                  <div class="tech-tags">
+                    <span class="chip">Machine Learning</span>
+                    <span class="chip">Random Forest</span>
+                    <span class="chip">XGBoost</span>
+                  </div>
+                  <p>
+                    Simulates T20 cricket matches by predicting scores and wickets using 
+                    IPL ball-by-ball data and player statistics, leveraging KNN clustering
+                    for strategic insights.
+                  </p>
+                  <a href="https://kharchesarvesh.medium.com/predicting-cricket-a-machine-learning-approach-to-t20-match-simulation-ae3d6198a8b1" class="card-link">Read more <i class="material-icons tiny">arrow_forward</i></a>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-3">
-                <img
-                  src="images/project3.jpeg"
-                  class="img-fluid rounded-start"
-                  alt="Project 1"
-                />
-              </div>
-              <div class="col-md-9">
-                <div class="card-body">
-                  <h5 class="card-title">Cricket Match Simulation and Score Prediction using Machine Learning.</h5>
-                  <p class="card-text">
-                    A machine learning project that simulates T20 cricket matches by predicting 
-                    scores and wickets using IPL ball-by-ball data and player statistics. 
-                    It leverages KNN clustering along with Random Forest and XGBoost models to 
-                    provide strategic insights into match outcomes.
-                    <!-- Link to project or more details -->
-                    <a href="https://kharchesarvesh.medium.com/predicting-cricket-a-machine-learning-approach-to-t20-match-simulation-ae3d6198a8b1" class="card-link">Read more</a>
-                  </p>
-                  <!-- Skill badges or tags for the project -->
-                  <span class="badge bg-secondary me-1">Python</span>
-                  <span class="badge bg-secondary me-1">Machine Learning</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-        </section>
+        </div>
 
         <!-- Education Section -->
-        <section class="mb-5">
-          <h4 class="mb-4">Education</h4>
-          <div>
-            <h6>Master of Science in Data Science</h6>
-            <p class="small text-muted">Rutgers University - New Brunswick (Sep. 2023 - May 2025)</p>
-            <!-- <p class="mb-2">
-              Short description of relevant coursework, achievements, or
-              highlights. Mention any key skills you developed here.
-            </p> -->
+        <div class="card" id="education">
+          <div class="card-content">
+            <span class="card-title">Education</span>
+            <div class="education-item">
+              <h6><i class="material-icons tiny">school</i> Master of Science in Data Science</h6>
+              <p class="grey-text">Rutgers University - New Brunswick</p>
+              <p class="grey-text">Sep. 2023 - May 2025</p>
+              <div class="relevant-courses">
+                <p><strong>Relevant Coursework:</strong> Probability and Statistical Inference, Financial Data Mining, Database Management, Natural Language
+                    Processing, Data Structures and Algorithms, Statistical Modeling, Regression and Time Series Analysis, Data Analysis and
+                    Visualization.</p>
+              </div>
+            </div>
+            <div class="education-item">
+              <h6><i class="material-icons tiny">school</i> Bachelor of Engineering in Information Technology</h6>
+              <p class="grey-text">University of Mumbai</p>
+              <p class="grey-text">Aug. 2017 - Jun. 2021</p>
+            </div>
           </div>
-          <div>
-            <h6>Bachelor of Engineering in Information Technology</h6>
-            <p class="small text-muted">University of Mumbai (Aug. 2017 - Jun. 2021)</p>
-            <!-- <p class="mb-2">
-              Short description of relevant coursework, achievements, or
-              highlights. Mention any key skills you developed here.
-            </p> -->
-          </div>
+        </div>
 
-          <h4 class="mb-4">Experience</h4>
-          <div>
-            <h6>Analyst</h6>
-            <p class="small text-muted">Tata Consultancy Services (Aug. 2021 - Jun. 2023)</p>
-            <ul>
+        <!-- Experience Section -->
+        <div class="card" id="experience">
+          <div class="card-content">
+            <span class="card-title">Experience</span>
+            <div class="experience-item">
+              <h6>Analyst</h6>
+              <p class="grey-text">Tata Consultancy Services (Aug. 2021 - Jun. 2023)</p>
+              <ul>
                 <li>Streamlined a real-time monitoring framework, reducing incident response time by 40% and improving system protection through advanced data analysis.</li>
                 <li>Collaborated with cybersecurity vendors to enhance solutions, achieving a 30% reduction in security incidents and a 20% increase in threat detection.</li>
                 <li>Extracted actionable insights from security data, optimizing threat identification and prevention strategies.</li>
-            </ul>
-          </div>
-          <div>
-            <h6>Data Analytics Intern</h6>
-            <p class="small text-muted">Eduvance (Jun. 2019 - Jul. 2019)</p>
-            <ul>
+              </ul>
+            </div>
+            <div class="experience-item">
+              <h6>Data Analytics Intern</h6>
+              <p class="grey-text">Eduvance (Jun. 2019 - Jul. 2019)</p>
+              <ul>
                 <li>Completed a summer industrial training program on Data Analytics using Python.</li>
                 <li>Gained experience in data preprocessing, analysis with Pandas, and visualization in Python.</li>
-                <li>Received a “very good” performance rating from the training manager.</li>
-            </ul>
+                <li>Received a "very good" performance rating from the training manager.</li>
+              </ul>
+            </div>
           </div>
-
-          <!-- Add more education entries if needed -->
-        </section>
+        </div>
+        
+        <!-- Contact Section (NEW) -->
+        <div class="card" id="contact">
+          <div class="card-content">
+            <span class="card-title">Contact</span>
+            <div class="row">
+              <div class="col s12 m6">
+                <div class="contact-item">
+                    <a href="mailto:sarvesh.kharche@rutgers.edu" style="text-decoration: none; color: black;">
+                  <i class="material-icons">email</i>
+                  <span>sarvesh.kharche@rutgers.edu</span>
+                </a>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="contact-item">
+                  <i class="material-icons">phone</i>
+                  <span>+1 (732) 626-1679</span>
+                </div>
+              </div>
+              <div class="col s12">
+                <div class="contact-item">
+                    <a href="https://www.linkedin.com/in/sarvesh-kharche/" style="text-decoration: none; color: black;">
+                  <i class="material-icons">link</i>
+                  <span>linkedin.com/in/sarveshkharche</span>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Bootstrap JS (CDN) -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-  ></script>
-  <!-- Optional Custom JS -->
-  <script src="js/main.js"></script>
+  <!-- Footer (NEW) -->
+  <!-- <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h5>Sarvesh Kharche</h5>
+          <p>Data Scientist & Machine Learning Engineer</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2025 Sarvesh Kharche. All rights reserved.
+      </div>
+    </div>
+  </footer> -->
+
+  <!-- Materialize JS (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+  <!-- JavaScript for Initialization -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize sidenav
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+      
+      // Initialize scrollspy (smooth scrolling)
+      var scrollspy = document.querySelectorAll('.scrollspy');
+      var scrollspyInstances = M.ScrollSpy.init(scrollspy);
+    });
+  </script>
 </body>
 </html>
