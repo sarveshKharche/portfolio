@@ -16,7 +16,7 @@ const SKILLS = [
 const PROJECTS = [
   {
     title: 'Smart Travel Planner AI',
-    image: '/images/project6.png',
+    image: './images/project6.png',
     tags: ['AI', 'AWS', 'Langgraph'],
     description: 'Production-ready smart travel planner using a multi-agent AI system powered by Amazon Bedrock to generate personalized, budget-aware travel itineraries.',
     github: 'https://github.com/sarveshKharche/smart-travel-planner-AI',
@@ -24,7 +24,7 @@ const PROJECTS = [
   },
   {
     title: 'Automated Flashcard Generation',
-    image: '/images/project1.jpeg',
+    image: './images/project1.jpeg',
     tags: ['NLP', 'Transformers', 'LoRA'],
     description: 'NLP-powered tool that automatically generates high-quality flashcards from academic notes using a fine-tuned T5 model with Low-Rank Adaptation (LoRA).',
     github: 'https://github.com/sarveshKharche/Automated-Flashcard-Generation',
@@ -32,7 +32,7 @@ const PROJECTS = [
   },
   {
     title: 'Autonomous Research Assistant',
-    image: '/images/project4.jpeg',
+    image: './images/project4.jpeg',
     tags: ['AI', 'RAG', 'Langchain'],
     description: 'AI-powered research assistant that streamlines academic research by automatically gathering, summarizing, and synthesizing literature from sources like arXiv.',
     github: 'https://github.com/sarveshKharche/ai-research-assistant',
@@ -40,7 +40,7 @@ const PROJECTS = [
   },
   {
     title: 'Twitter Data Search App',
-    image: '/images/project2.jpeg',
+    image: './images/project2.jpeg',
     tags: ['Azure SQL', 'MongoDB', 'Databricks'],
     description: 'Efficient system for collecting, storing, and retrieving Twitter data using Azure SQL and MongoDB with caching mechanisms.',
     github: 'https://github.com/sarveshKharche/Twitter-App',
@@ -129,7 +129,7 @@ const Hero = () => (
         <div style={{ position: 'relative' }}>
           <div style={{ position: 'absolute', inset: -10, background: 'linear-gradient(to right, var(--accent-color), var(--accent-secondary))', filter: 'blur(30px)', opacity: 0.5, borderRadius: '50%' }}></div>
           <img 
-            src="/images/headshot.jpg" 
+            src="./images/headshot.jpg" 
             alt="Sarvesh Kharche" 
             style={{ width: '350px', height: '350px', objectFit: 'cover', borderRadius: '50%', border: '4px solid rgba(255,255,255,0.1)', position: 'relative', zIndex: 1 }}
           />
