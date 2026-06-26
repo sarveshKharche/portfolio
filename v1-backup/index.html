@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M4SYTPXLF8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-M4SYTPXLF8');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarvesh Kharche - Portfolio</title>
+  <!-- Materialize CSS (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- Navigation Bar (NEW) -->
+  <!-- <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <div class="container">
+        <a href="#" class="brand-logo">SK</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+  <!-- Mobile Sidenav -->
+  <!-- <ul class="sidenav" id="mobile-demo">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>  -->
+
+  <!-- Main Container -->
+  <div class="container my-5">
+    <div class="row">
+      <!-- LEFT COLUMN (Profile & Skills) -->
+      <div class="col s12 m4">
+        <!-- Profile Section -->
+        <div class="card">
+          <div class="card-content profile-header">
+            <img src="images/headshot.jpg" alt="Profile Photo" class="circle responsive-img profile-img" width="150"
+              height="150">
+            <h5>Sarvesh Kharche</h5>
+            <p class="grey-text">AI Engineer</p>
+            <p class="grey-text">MS in Data Science</p>
+            <div class="location-badge">
+              <i class="material-icons tiny">location_on</i>
+              <span>New York City, NY</span>
+            </div>
+
+            <!-- Social Media Links (NEW) -->
+
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/sarvesh-kharche/"
+                class="btn-floating btn-small waves-effect waves-light">
+                <i style="background-color: black;" class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/sarveshKharche" class="btn-floating btn-small waves-effect waves-light">
+                <i style="background-color: black;" class="fab fa-github"></i>
+              </a>
+              <a href="mailto:sarvesh.kharche@rutgers.edu" class="btn-floating btn-small waves-effect waves-light">
+                <i style="background-color: black;" class="fas fa-envelope"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="card" id="about">
+          <div class="card-content">
+            <span class="card-title">About</span>
+            <p>
+              I'm Sarvesh Kharche, an AI Engineer and MS in Data Science graduate from Rutgers University. I specialize
+              in building intelligent, scalable AI applications and
+              end-to-end machine learning pipelines.
+            </p>
+            <p>
+              With a strong foundation in Generative AI, natural language processing, and data engineering,
+              my expertise spans across large language models, agentic workflows, and complex data architecture.
+              From engineering high-performance APIs for unified LLM routing to developing multi-agent systems
+              and fine-tuning transformers, I am passionate about leveraging cutting-edge technology to solve
+              complex problems and drive innovation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Skills</span>
+            <div class="skill-category">
+              <h6><i class="material-icons tiny">code</i> Programming</h6>
+              <div class="chips-container">
+                <div class="chip">Python</div>
+                <div class="chip">SQL</div>
+                <div class="chip">R</div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h6><i class="material-icons tiny">data_usage</i> Machine Learning & AI</h6>
+              <div class="chips-container">
+                <div class="chip">scikit-learn</div>
+                <div class="chip">TensorFlow</div>
+                <div class="chip">PyTorch</div>
+                <div class="chip">Hugging Face Transformers</div>
+                <div class="chip">Langchain/Langgraph</div>
+                <div class="chip">Generative AI</div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h6><i class="material-icons tiny">psychology</i> Data Engineering & Big Data</h6>
+              <div class="chips-container">
+                <div class="chip">AWS</div>
+                <div class="chip">PySpark</div>
+                <div class="chip">Kafka</div>
+                <div class="chip">ETL/ELT</div>
+                <div class="chip">Data Pipelines</div>
+                <div class="chip">Cloud Computing</div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h6><i class="material-icons tiny">data_usage</i> Data Visualization & Analysis</h6>
+              <div class="chips-container">
+                <div class="chip">Pandas</div>
+                <div class="chip">NumPy</div>
+                <div class="chip">Matplotlib</div>
+                <div class="chip">Seaborn</div>
+                <div class="chip">Tableau</div>
+                <div class="chip">Streamlit</div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h6><i class="material-icons tiny">code</i> Tools & Developer Environment</h6>
+              <div class="chips-container">
+                <div class="chip">Git</div>
+                <div class="chip">Docker</div>
+                <div class="chip">Jupyter Notebook</div>
+                <div class="chip">VS Code</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN (Projects, Education, etc.) -->
+      <div class="col s12 m8">
+        <!-- Projects Section -->
+        <div class="card" id="projects">
+          <div class="card-content">
+            <span class="card-title">Projects</span>
+
+            <!-- Project 1 -->
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="images/project6.png" alt="Smart Travel Planner AI Project">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5>Smart Travel Planner AI</h5>
+                  <div class="tech-tags">
+                    <span class="chip">AI</span>
+                    <span class="chip">AWS</span>
+                    <span class="chip">Langgraph</span>
+                  </div>
+                  <p>
+                    This project is a production-ready smart travel planner that uses a multi-agent AI system powered by
+                    Amazon Bedrock to generate personalized, budget-aware travel itineraries for worldwide destinations
+                    from natural language queries.
+                    Live Application.
+                  </p>
+                  <p><a
+                      href="https://kharchesarvesh.medium.com/how-i-built-a-smart-travel-planner-with-a-team-of-ai-agents-61ca764f751b"
+                      class="card-link">Read more <i class="material-icons tiny">arrow_forward</i></a></p>
+                  <p><a href="https://github.com/sarveshKharche/smart-travel-planner-AI" class="card-link">Github <i
+                        class="material-icons tiny">arrow_forward</i></a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 1 -->
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="images/project1.jpeg" alt="Flashcard Generation Project">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5>Automated Flashcard Generation</h5>
+                  <div class="tech-tags">
+                    <span class="chip">NLP</span>
+                    <span class="chip">Transformers</span>
+                    <span class="chip">LoRA</span>
+                  </div>
+                  <p>
+                    Developed an NLP-powered tool that automatically generates high-quality
+                    flashcards from academic notes using a fine-tuned T5 model with
+                    Low-Rank Adaptation (LoRA).
+                  </p>
+                  <p><a
+                      href="https://kharchesarvesh.medium.com/automating-flashcard-generation-with-lora-enhanced-transformers-a79854818190"
+                      class="card-link">Read more <i class="material-icons tiny">arrow_forward</i></a></p>
+                  <p><a href="https://github.com/sarveshKharche/Automated-Flashcard-Generation" class="card-link">Github
+                      <i class="material-icons tiny">arrow_forward</i></a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 1 -->
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="images/project4.jpeg" alt="Autonomous Research Assistant For Literature Review">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5>Autonomous Research Assistant For Literature Review</h5>
+                  <div class="tech-tags">
+                    <span class="chip">AI</span>
+                    <span class="chip">RAG</span>
+                    <span class="chip">Langchain</span>
+                  </div>
+                  <p>
+                    I developed an AI-powered research assistant that streamlines academic research by
+                    automatically gathering, summarizing, and synthesizing literature from sources like
+                    arXiv. This project leverages advanced techniques such as Retrieval Augmented Generation
+                    and interactive dashboards to enhance research workflows.
+                  </p>
+                  <p><a
+                      href="https://kharchesarvesh.medium.com/building-an-ai-research-assistant-a-step-by-step-guide-63180c282f3b"
+                      class="card-link">Read more <i class="material-icons tiny">arrow_forward</i></a></p>
+                  <p><a href="https://github.com/sarveshKharche/ai-research-assistant" class="card-link">Github <i
+                        class="material-icons tiny">arrow_forward</i></a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="images/project2.jpeg" alt="Twitter Data Search App">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5>Twitter Data Search Application</h5>
+                  <div class="tech-tags">
+                    <span class="chip">Azure SQL</span>
+                    <span class="chip">MongoDB</span>
+                    <span class="chip">Databricks</span>
+                  </div>
+                  <p>
+                    Designed an efficient system for collecting, storing, and retrieving
+                    Twitter data using Azure SQL and MongoDB with caching mechanisms to enhance
+                    query performance.
+                  </p>
+                  <p><a
+                      href="https://kharchesarvesh.medium.com/optimizing-twitter-data-management-and-search-with-databricks-azure-sql-and-mongodb-b1bcd58ec13f"
+                      class="card-link">Read more <i class="material-icons tiny">arrow_forward</i></a></p>
+                  <p><a href="https://github.com/sarveshKharche/Twitter-App" class="card-link">Github <i
+                        class="material-icons tiny">arrow_forward</i></a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="images/project3.jpeg" alt="Cricket Match Simulation">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5>Cricket Match Simulation</h5>
+                  <div class="tech-tags">
+                    <span class="chip">Machine Learning</span>
+                    <span class="chip">Random Forest</span>
+                    <span class="chip">XGBoost</span>
+                  </div>
+                  <p>
+                    Simulates T20 cricket matches by predicting scores and wickets using
+                    IPL ball-by-ball data and player statistics, leveraging KNN clustering
+                    for strategic insights.
+                  </p>
+                  <p><a
+                      href="https://kharchesarvesh.medium.com/predicting-cricket-a-machine-learning-approach-to-t20-match-simulation-ae3d6198a8b1"
+                      class="card-link">Read more <i class="material-icons tiny">arrow_forward</i></a></p>
+                  <p><a href="https://github.com/sarveshKharche/FYP-cricket-match-simulator" class="card-link">Github <i
+                        class="material-icons tiny">arrow_forward</i></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="card" id="experience">
+          <div class="card-content">
+            <span class="card-title">Experience</span>
+            <div class="experience-item">
+              <h6>AI Engineer</h6>
+              <p class="grey-text">Saayam For All, Remote, US (Jan. 2026 - Present)</p>
+              <ul>
+                <li>Accelerated answer delivery across 35+ domain categories by engineering a Flask-based generate
+                  answer API that unified multiple LLMs under a single routing layer, reducing integration overhead for
+                  new LLM providers.</li>
+                <li>Eliminated inconsistent LLM output formatting for API responses by designing a regex-driven prompt
+                  engineering and text-processing pipeline that enforced structured outputs across model responses.</li>
+                <li>Cut API cost and latency by building a performance monitoring framework that tracked TTFT,
+                  end-to-end latency, and tokens/sec — enabling data-driven model selection across multiple LLM
+                  providers.</li>
+                <li>Improved response relevance and reduced manual query routing by developing a zero-shot
+                  classification pipeline using Hugging Face BART (MNLI), automatically categorizing user inputs with no
+                  labeled training data required.</li>
+              </ul>
+            </div>
+            <div class="experience-item">
+              <h6>Systems Engineer</h6>
+              <p class="grey-text">Tata Consultancy Services (TCS), Mumbai, India (Aug. 2021 - Jun. 2023)</p>
+              <ul>
+                <li>Analyzed large-scale time-series operational data using Python and SQL to identify anomaly patterns
+                  and incident bottlenecks, helping reduce response times by 40%.</li>
+                <li>Partnered with cross-functional stakeholders to define metrics, streamline reporting logic, and
+                  deliver data solutions that improved monitoring accuracy by 20%.</li>
+                <li>Automated recurring reporting and analysis workflows to reduce manual effort and support faster
+                  operational decision-making.</li>
+              </ul>
+            </div>
+            <div class="experience-item">
+              <h6>Data Analytics Intern</h6>
+              <p class="grey-text">Eduvance (Jun. 2019 - Jul. 2019)</p>
+              <ul>
+                <li>Applied Python (Pandas, NumPy) for ETL and preprocessing of large datasets, transforming raw data
+                  into analysis-ready
+                  formats during the data analytics bootcamp.</li>
+                <li>Built interactive Python dashboards (Matplotlib) to visualize data patterns and derive actionable
+                  insights within the data
+                  analytics bootcamp project.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="card" id="education">
+          <div class="card-content">
+            <span class="card-title">Education</span>
+            <div class="education-item">
+              <h6><i class="material-icons tiny">school</i> Master of Science in Data Science</h6>
+              <p class="grey-text">Rutgers University - New Brunswick</p>
+              <p class="grey-text">Sep. 2023 - Oct. 2026</p>
+            </div>
+            <div class="education-item">
+              <h6><i class="material-icons tiny">school</i> Bachelor of Engineering in Information Technology</h6>
+              <p class="grey-text">University of Mumbai</p>
+              <p class="grey-text">Aug. 2017 - Jun. 2021</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Section (NEW) -->
+        <div class="card" id="contact">
+          <div class="card-content">
+            <span class="card-title">Contact</span>
+            <div class="row">
+              <div class="col s12 m6">
+                <div class="contact-item">
+                  <a href="mailto:sarvesh.kharche@rutgers.edu" style="text-decoration: none; color: black;">
+                    <i class="material-icons">email</i>
+                    <span>sarvesh.kharche@rutgers.edu</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="contact-item">
+                  <i class="material-icons">phone</i>
+                  <span>+1 (732) 626-1679</span>
+                </div>
+              </div>
+              <div class="col s12">
+                <div class="contact-item">
+                  <a href="https://www.linkedin.com/in/sarvesh-kharche/" style="text-decoration: none; color: black;">
+                    <i class="material-icons">link</i>
+                    <span>linkedin.com/in/sarveshkharche</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer (NEW) -->
+  <!-- <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h5>Sarvesh Kharche</h5>
+          <p>Data Scientist & Machine Learning Engineer</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2025 Sarvesh Kharche. All rights reserved.
+      </div>
+    </div>
+  </footer> -->
+
+  <!-- Materialize JS (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- JavaScript for Initialization -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Initialize sidenav
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+
+      // Initialize scrollspy (smooth scrolling)
+      var scrollspy = document.querySelectorAll('.scrollspy');
+      var scrollspyInstances = M.ScrollSpy.init(scrollspy);
+    });
+  </script>
+</body>
+
+</html>
